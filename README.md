@@ -19,7 +19,7 @@ My model is sequential neural network model implemented using keras. 'Sequential
 
 While creating even simple sequential model you have to consider what function or functions you'll use as activation functions and how you want to initialize biases and weights. There are several function used commonly in deep learning as activation fuctions. Those are:
 
- - sigmoid function
+ - sigmoid function 
 $$\ \sigma(x) =\frac{1}{1+e^{-x}}$$
  - ReLu - 
 $$\ f(x) = max(0,x)$$
