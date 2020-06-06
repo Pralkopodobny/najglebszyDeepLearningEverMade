@@ -1,3 +1,6 @@
+
+
+
 > Written with [StackEdit](https://stackedit.io/).
 # Fashon-MNIST project
 ## Introduction
@@ -30,3 +33,7 @@ Those lectures also contain basic ideas how to initialize weights. The common so
 #### Gabor filter
 Gabor filter is a linear filter used for preprocessing images for deep learning. To visualise it's effects you can look at images below.
 ![](/data/images/gabor_filter_1.png)
+![](/data/images/gabor_filter_2.png)
+![](/data/images/gabor_filter_3.png)
+As you can see, gabor filter extracts features from image, however you have to know in which direction you want them extracted. **Fashon-MNIST contains only non rotated images**, so you can apply horizontal filter.
+![Fashon-MNIST images before and after applying gabor filter](/data/images/gabored_fashon_mnist.png)
