@@ -19,10 +19,14 @@ My model is sequential neural network model implemented using keras. 'Sequential
 
 While creating even simple sequential model you have to consider what function or functions you'll use as activation functions and how you want to initialize biases and weights. There are several function used commonly in deep learning as activation fuctions. Those are:
 
- - sigmoid function $$\ \sigma(x) =\frac{1}{1+e^{-x}}$$
- - ReLu - $$\ f(x) = max(0,x)$$
- - Leaky Relu - $$\ f(x) =max(0.01x,x)$$
- - Tanh(x) $$\ Tanh(x)$$
+ - sigmoid function
+$$\ \sigma(x) =\frac{1}{1+e^{-x}}$$
+ - ReLu - 
+$$\ f(x) = max(0,x)$$
+ - Leaky Relu - 
+$$\ f(x) =max(0.01x,x)$$
+ - Tanh(x) 
+$$\ Tanh(x)$$
 
 You can learn more about them by watching [Stanford university lectures](https://www.youtube.com/watch?v=wEoyxE0GP2M&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv&index=6).
 All of them have pros and cons, but as a rule of thumb you should never use sigmoid function and use ReLu instead. It's also possible to experiment with usage of other functions.
