@@ -25,15 +25,27 @@ While creating even simple sequential model you have to consider what function o
  - $\ Tanh(x)$
 
 You can learn more about them by watching [Stanford university lectures](https://www.youtube.com/watch?v=wEoyxE0GP2M&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv&index=6).
-All of them have pros and cons, but as a rule of thumb you should never use sigmoid function and use ReLu instead. It's also possible to experiment with using other functions.
+All of them have pros and cons, but as a rule of thumb you should never use sigmoid function and use ReLu instead. It's also possible to experiment with usage of other functions.
 
 Those lectures also contain basic ideas how to initialize weights. The common solution is Xavier initialization (also known as Glorot initialization), however it woked well with sigmoid function not a ReLu function. You should use slightly modified version called he et al initialization.
 
 #### about model
 #### Gabor filter
 Gabor filter is a linear filter used for preprocessing images for deep learning. To visualise it's effects you can look at images below.
+
 ![](/data/images/gabor_filter_1.png)
 ![](/data/images/gabor_filter_2.png)
 ![](/data/images/gabor_filter_3.png)
+
 As you can see, gabor filter extracts features from image, however you have to know in which direction you want them extracted. **Fashon-MNIST contains only non rotated images**, so you can apply horizontal filter.
-![Fashon-MNIST images before and after applying gabor filter](/data/images/gabored_fashon_mnist.png)
+
+Below you can see Fashon-MNIST images before and after applying gabor filter.
+
+![](/data/images/gabored_fashon_mnist.png)
+
+#### Extending training set
+It is possible to increase size of training set by applying small changes to images that won't change their classification. It's a common technique that should increase accuracy of model (if done correctly). As I mentioned before, Fashon-MNIST contains only non rotated images, so applying rotation is a bad idea. However you can still apply translation by vector.
+
+Below you can see Fashon-MNIST images before and after applying translation by random vectors containing values from -3 to 3.
+
+![](/data/images/translated_fashon_mnist.png)
