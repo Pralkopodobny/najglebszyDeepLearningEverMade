@@ -51,27 +51,27 @@ The next step is training (fitting) your model. I used same amount of epchos and
 #### Gabor filter
 Gabor filter is a linear filter used for preprocessing images for deep learning. To visualise it's effects you can look at images below.
 
-![](/data/images/gabor_filter_1.png)
-![](/data/images/gabor_filter_2.png)
-![](/data/images/gabor_filter_3.png)
+![](lab_4/data/images/gabor_filter_1.png)
+![](lab_4/data/images/gabor_filter_2.png)
+![](lab_4/data/images/gabor_filter_3.png)
 
 As you can see, gabor filter extracts features from image, however you have to know in which direction you want them extracted. **Fashon-MNIST contains only non rotated images**, so you can apply horizontal filter.
 
 Below you can see Fashon-MNIST images before and after applying gabor filter.
 
-![](/data/images/gabored_fashon_mnist.png)
+![](lab_4/data/images/gabored_fashon_mnist.png)
 
 #### Extending training set
 It is possible to increase size of training set by applying small changes to images that won't change their classification. It's a common technique that should increase accuracy of model (if done correctly). As I mentioned before, Fashon-MNIST contains only non rotated images, so applying rotation is a bad idea. However you can still apply translation by vector.
 
 Below you can see Fashon-MNIST images before and after applying translation by random vectors containing values from -3 to 3.
 
-![](/data/images/translated_fashon_mnist.png)
+![](lab_4/data/images/translated_fashon_mnist.png)
 
 ## Results
 
 ### k-NN with hamming metric
-I [binarized](https://www.youtube.com/watch?v=wEoyxE0GP2M&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv&index=6) fashon-MNIST images with diffrent thresholds and I used [k-NN](https://www.youtube.com/watch?v=wEoyxE0GP2M&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv&index=6) model to classify them. You can see results in table below and sorce code of tests [here](https://www.youtube.com/watch?v=wEoyxE0GP2M&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv&index=6).
+I [binarized]() fashon-MNIST images with diffrent thresholds and I used [k-NN]() model to classify them. You can see results in table below and sorce code of tests [here](https://www.youtube.com/watch?v=wEoyxE0GP2M&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv&index=6).
 | Threshold  | k_values | Acuraccy | Best k |
 |--|--|--|--  |
 | 0.1 | 3-9 | 0.8588 | 3 |
@@ -85,7 +85,7 @@ I [binarized](https://www.youtube.com/watch?v=wEoyxE0GP2M&list=PL3FW7Lu3i5JvHM8l
 | 0.9 | 3-9 | 0.5244 | 7 |
 
 As we can see the best results are with the smallest threshold.
-![](/data/images/knn_winners.png)
+![](lab_4/data/images/knn_winners.png)
 ### k-NN with euclidean metric
 I normalized values of pixels to 0-1 range and I used model to classify them. You can see results in table below and sorce code of tests [here](https://www.youtube.com/watch?v=wEoyxE0GP2M&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv&index=6).
 | HH:MM:SS | k_values | Best Acuraccy  | best k
@@ -94,7 +94,7 @@ I normalized values of pixels to 0-1 range and I used model to classify them. Yo
 
 ### k-NN summary
 If we compare our best models to [Zalandoresearch benchmark](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/) we can see, that our results are very similar. 
-![](/data/images/KNN_comparission)
+![](lab_4/data/images/KNN_comparission)
 
 ### my model with minimal preprocessing
 I normalized images to range 0-1 and reshaped them. My model has better results then oryginal one. (Sorce code of all tests you can find [here]()).
