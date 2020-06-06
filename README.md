@@ -28,9 +28,26 @@ You can learn more about them by watching [Stanford university lectures](https:/
 All of them have pros and cons, but as a rule of thumb you should never use sigmoid function and use ReLu instead. It's also possible to experiment with usage of other functions.
 
 Those lectures also contain basic ideas how to initialize weights. The common solution is Xavier initialization (also known as Glorot initialization), however it woked well with sigmoid function not a ReLu function. You should use slightly modified version called he et al initialization.
-
+(https://books.google.pl/books/about/Deep_Learning_with_Applications_Using_Py.html?id=5HNUDwAAQBAJ&source=kp_cover&redir_esc=y)
 #### about model
-My model is based of 
+ [Navin Kumar Manaswi](https://books.google.pl/books/about/Deep_Learning_with_Applications_Using_Py.html?id=5HNUDwAAQBAJ&source=kp_cover&redir_esc=y) says that there are eight steps to the deep learning process in Keras:
+1. Load the data.
+2. Preprocess the data.
+3. Define the model.
+4. Compile the model.
+5. Fit the model.
+6. Evaluate the model.
+7. Make the predictions.
+8. Save the model.
+
+First of all you have to load the data. Next step is preprocessing of the data. It could be for example extracting futures using for example gabor filter or binarization of images. You could also increase size of training data by doing  image manipulation. After that you have to reshape data, so your model can use it.
+
+Fundamental method of defining models is trial and error. That's why, in this project, my model is based of [one model from zalandor research github](https://github.com/zalandoresearch/fashion-mnist/blob/master/benchmark/convnet.py). I tried changing initialization of layers, theirs parameters and I added batch normalization layer ([here's why it could be a good idea](https://youtu.be/wEoyxE0GP2M?t=2934)) . **However the goal of this project is not to make the best model possible, but to see results of training set manipulation**. In order to do so, I tried applying gabor filter, binarizing of  and translating images by vector. You can see results in the Result section.
+
+Before compiling, you have to chose optimizer for your model. I tried diffrent optimizers (trial and error method) and the best results (using only normalization and reshaping of data as preprocessing) produced adam optimizer. Adam optimizer is impementation of [SGD](https://en.wikipedia.org/wiki/Stochastic_gradient_descent).
+
+The next step is training (fitting) your model. I used same amount of epchos and same batchsize as original model in order to make comparission of accuracy more reliable.
+### Data set manipulation
 #### Gabor filter
 Gabor filter is a linear filter used for preprocessing images for deep learning. To visualise it's effects you can look at images below.
 
@@ -74,4 +91,37 @@ I normalized values of pixels to 0-1 range and I used model to classify them. Yo
 | HH:MM:SS | k_values | Best Acuraccy  | best k
 |--|--|--|--|
 | 00:11:00 | 3-9 | 0.8527 | 3 |
+
+### k-NN summary
+If we compare our best models to [Zalandoresearch benchmark](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/) we can see, that our results are very similar. 
+![](/data/images/KNN_comparission)
+
+### my model with minimal preprocessing
+I normalized images to range 0-1 and reshaped them. My model has better results then oryginal one. (Sorce code of all tests you can find [here]()).
+|  | accuracy |
+|--|--|
+| **oryginal model** | 0.916 |
+| **my model** | 0.9253 |
+
+
+### my model with gabor filter
+I used gabor filter ([sorce code]()) to extract features from images (parameters of filter I got by trial and error). It resulted in small decrease of accuracy.
+|  | accuracy |
+|--|--|
+| **my model without gabor filter preprocessing** | 0.9253 |
+| **my model with gabor filter preprocessing** | 0.905 |
+
+### my model with binarization
+I used best threshold from k-NN research and binarized ([sorce code]()) images. The results are not surprising: Binarization of image results in loss of information so model is not able to predict as good as it would without it.
+|  | accuracy |
+|--|--|
+| **my model without binarization of images** | 0.9253 |
+| **my model with binarization of images** | 0.8840 |
+
+### my model with extension of training dataset
+I translated ([sorce code]()) images by a vector and added them to the training dataset. It didn't change accuracy too much, however during training process we could observe smaller diffrence between training accuracy and validation accuracy. It could mean that this method reduces [overfitting](https://en.wikipedia.org/wiki/Overfitting).
+|  | accuracy |
+|--|--|
+| **my model without extension of training dataset** | 0.9253 |
+| **my model with extension of training dataset** | 0.9271 |
 

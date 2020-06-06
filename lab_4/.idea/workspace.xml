@@ -22,20 +22,25 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data/images" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\Documents\Systemy\lab_4\data\images" />
       <recent name="C:\Users\HP\Documents\Systemy\lab_4" />
       <recent name="C:\Users\HP\Documents\Systemy\lab_4\utils\data\fashion" />
       <recent name="C:\Users\HP\Documents\Systemy\lab_4\utils" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\Documents\Systemy\lab_4\tests" />
+      <recent name="C:\Users\HP\Documents\Systemy\lab_4\preprocessing" />
+      <recent name="C:\Users\HP\Documents\Systemy\lab_4\models" />
+      <recent name="C:\Users\HP\Documents\Systemy\lab_4\data\images" />
       <recent name="C:\Users\HP\Documents\Systemy\lab_4" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.nyan">
-    <configuration name="PlikDoTestowINauki" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.gaborFilter">
+    <configuration name="KNN_tests (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="lab_4" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -43,11 +48,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tensorFlowTutorial" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorFlowTutorial/PlikDoTestowINauki.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/KNN_tests.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -56,49 +61,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="TutajBawieSieTensorFlow" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="lab_4" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tensorFlowTutorial" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorFlowTutorial/TutajBawieSieTensorFlow.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="kerOpt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="lab_4" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tensorFlowTutorial" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorFlowTutorial/kerOpt.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="KNN_tests" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="lab_4" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -110,7 +73,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\HP\Documents\Systemy\lab_4\tests\KNN_tests.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -119,7 +82,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="nyan" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="gaborFilter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="lab_4" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -127,11 +90,53 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tensorFlowTutorial" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/preprocessing" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorFlowTutorial/nyan.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/preprocessing/gaborFilter.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="my_model_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lab_4" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\HP\Documents\Systemy\lab_4\tests\my_model_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="translator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lab_4" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\HP\Documents\Systemy\lab_4\preprocessing\translator.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -142,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.nyan" />
-        <item itemvalue="Python.kerOpt" />
-        <item itemvalue="Python.PlikDoTestowINauki" />
-        <item itemvalue="Python.TutajBawieSieTensorFlow" />
-        <item itemvalue="Python.main" />
+        <item itemvalue="Python.gaborFilter" />
+        <item itemvalue="Python.KNN_tests (1)" />
+        <item itemvalue="Python.my_model_test" />
+        <item itemvalue="Python.translator" />
+        <item itemvalue="Python.KNN_tests" />
       </list>
     </recent_temporary>
   </component>
@@ -164,41 +169,45 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1590949035653">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1591486239313">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590949035653" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1590949035653">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591486239313" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1591486239313">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590949035653" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1590949035652">
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591486239313" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1591486239313">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590949035652" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1590949035653">
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591486239313" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1591486239313">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590949035653" />
-    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1590938232628">
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591486239313" />
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1591483193456">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590938232628" />
-    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1590938232628">
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591483193456" />
+    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1591483193456">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590938232628" />
-    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1590938232628">
+    <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591483193456" />
+    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1591483193456">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590938232628" />
-    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1590938232628">
+    <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591483193456" />
+    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1591483193456">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590938232628" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1590935418353">
+    <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591483193456" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1591438495052">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590935418353" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591438495052" />
+    <state x="701" y="163" key="refactoring.ChangeSignatureDialog" timestamp="1591264437004">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="701" y="163" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591264437004" />
   </component>
 </project>
