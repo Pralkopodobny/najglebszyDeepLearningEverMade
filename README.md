@@ -71,7 +71,7 @@ Below you can see Fashon-MNIST images before and after applying translation by r
 ## Results
 
 ### k-NN with hamming metric
-I [binarized]() fashon-MNIST images with diffrent thresholds and I used [k-NN]() model to classify them. You can see results in table below and sorce code of tests [here](https://www.youtube.com/watch?v=wEoyxE0GP2M&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv&index=6).
+I [binarized](https://github.com/Pralkopodobny/najglebszyDeepLearningEverMade/blob/master/lab_4/preprocessing/binarizator.py) fashon-MNIST images with diffrent thresholds and I used [k-NN](https://github.com/Pralkopodobny/najglebszyDeepLearningEverMade/blob/master/lab_4/models/K_NN.py) model to classify them. You can see results in table below and sorce code of tests [here](https://github.com/Pralkopodobny/najglebszyDeepLearningEverMade/blob/master/lab_4/tests/KNN_tests.py).
 | Threshold  | k_values | Acuraccy | Best k |
 |--|--|--|--  |
 | 0.1 | 3-9 | 0.8588 | 3 |
@@ -87,7 +87,7 @@ I [binarized]() fashon-MNIST images with diffrent thresholds and I used [k-NN]()
 As we can see the best results are with the smallest threshold.
 ![](lab_4/data/images/knn_winners.png)
 ### k-NN with euclidean metric
-I normalized values of pixels to 0-1 range and I used model to classify them. You can see results in table below and sorce code of tests [here](https://www.youtube.com/watch?v=wEoyxE0GP2M&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv&index=6).
+I normalized values of pixels to 0-1 range and I used model to classify them. You can see results in table below and sorce code of tests [here](https://github.com/Pralkopodobny/najglebszyDeepLearningEverMade/blob/master/lab_4/tests/KNN_tests.py).
 | HH:MM:SS | k_values | Best Acuraccy  | best k
 |--|--|--|--|
 | 00:11:00 | 3-9 | 0.8527 | 3 |
@@ -97,7 +97,7 @@ If we compare our best models to [Zalandoresearch benchmark](http://fashion-mnis
 ![](lab_4/data/images/KNN_comparission)
 
 ### my model with minimal preprocessing
-I normalized images to range 0-1 and reshaped them. My model has better results then oryginal one. (Sorce code of all tests you can find [here]()).
+I normalized images to range 0-1 and reshaped them. My model has better results then oryginal one (you can find sorce code of all tests  [here](https://github.com/Pralkopodobny/najglebszyDeepLearningEverMade/blob/master/lab_4/tests/my_model_test.py)).
 |  | accuracy |
 |--|--|
 | **oryginal model** | 0.916 |
@@ -105,23 +105,25 @@ I normalized images to range 0-1 and reshaped them. My model has better results 
 
 
 ### my model with gabor filter
-I used gabor filter ([sorce code]()) to extract features from images (parameters of filter I got by trial and error). It resulted in small decrease of accuracy.
+I used gabor filter ([sorce code](https://github.com/Pralkopodobny/najglebszyDeepLearningEverMade/blob/master/lab_4/preprocessing/gaborFilter.py)) to extract features from images (I got parameters of filter by trial and error). It resulted in small decrease of accuracy.
 |  | accuracy |
 |--|--|
 | **my model without gabor filter preprocessing** | 0.9253 |
 | **my model with gabor filter preprocessing** | 0.905 |
 
 ### my model with binarization
-I used best threshold from k-NN research and binarized ([sorce code]()) images. The results are not surprising: Binarization of image results in loss of information so model is not able to predict as good as it would without it.
+I used best threshold from k-NN research and binarized ([sorce code](https://github.com/Pralkopodobny/najglebszyDeepLearningEverMade/blob/master/lab_4/preprocessing/binarizator.py)) images. The results are not surprising: Binarization of image results in loss of information so model is not able to predict as good as it would without it.
 |  | accuracy |
 |--|--|
 | **my model without binarization of images** | 0.9253 |
 | **my model with binarization of images** | 0.8840 |
 
 ### my model with extension of training dataset
-I translated ([sorce code]()) images by a vector and added them to the training dataset. It didn't change accuracy too much, however during training process we could observe smaller diffrence between training accuracy and validation accuracy. It could mean that this method reduces [overfitting](https://en.wikipedia.org/wiki/Overfitting).
+I translated ([sorce code](https://github.com/Pralkopodobny/najglebszyDeepLearningEverMade/blob/master/lab_4/preprocessing/translator.py)) images by a vector and added them to the training dataset. It didn't change accuracy too much, however during training process we could observe smaller diffrence between training accuracy and validation accuracy. It could mean that this method reduces [overfitting](https://en.wikipedia.org/wiki/Overfitting).
 |  | accuracy |
 |--|--|
 | **my model without extension of training dataset** | 0.9253 |
 | **my model with extension of training dataset** | 0.9271 |
 
+## Usage
+You need machine with python +3.6 and tensorflow, opencv, keras, numpy librarys installed. It is also recommended to download and enable CUDA on your machine ([tutorial](https://www.tensorflow.org/install/gpu)). You can run tests  by running [KNN_tests.py](https://github.com/Pralkopodobny/najglebszyDeepLearningEverMade/blob/master/lab_4/tests/KNN_tests.py) and [my_model_test.py](https://github.com/Pralkopodobny/najglebszyDeepLearningEverMade/blob/master/lab_4/tests/my_model_test.py) after cloning this git repository. If you want to use trained models you can load them from [files](https://github.com/Pralkopodobny/najglebszyDeepLearningEverMade/tree/master/lab_4/tests) using [this function](https://www.tensorflow.org/guide/keras/save_and_serialize).
