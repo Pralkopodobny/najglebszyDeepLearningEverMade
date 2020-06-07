@@ -28,7 +28,6 @@ You can learn more about them by watching [Stanford university lectures](https:/
 All of them have pros and cons, but as a rule of thumb you should never use sigmoid function and use ReLu instead. It's also possible to experiment with usage of other functions.
 
 Those lectures also contain basic ideas how to initialize weights. The common solution is Xavier initialization (also known as Glorot initialization), however it woked well with sigmoid function not a ReLu function. You should use slightly modified version called he et al initialization.
-(https://books.google.pl/books/about/Deep_Learning_with_Applications_Using_Py.html?id=5HNUDwAAQBAJ&source=kp_cover&redir_esc=y)
 #### about model
  [Navin Kumar Manaswi](https://books.google.pl/books/about/Deep_Learning_with_Applications_Using_Py.html?id=5HNUDwAAQBAJ&source=kp_cover&redir_esc=y) says that there are eight steps to the deep learning process in Keras:
 1. Load the data.
@@ -94,7 +93,7 @@ I normalized values of pixels to 0-1 range and I used model to classify them. Yo
 
 ### k-NN summary
 If we compare our best models to [Zalandoresearch benchmark](http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/) we can see, that our results are very similar. 
-![](lab_4/data/images/KNN_comparission)
+![](lab_4/data/images/KNN_comparission.png)
 
 ### my model with minimal preprocessing
 I normalized images to range 0-1 and reshaped them. My model has better results then oryginal one (you can find sorce code of all tests  [here](https://github.com/Pralkopodobny/najglebszyDeepLearningEverMade/blob/master/lab_4/tests/my_model_test.py)).
