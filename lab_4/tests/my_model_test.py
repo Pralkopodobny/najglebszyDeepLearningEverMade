@@ -152,4 +152,10 @@ def extension_tests(batch_size=128, num_classes=10, epochs=30, img_rows=28, img_
 
     model.save(filename)
 
-extension_tests()
+
+if __name__ == "__main__":
+    raw_tests()
+    gabor_tests()
+    binary_tests()
+    extension_tests()
+
