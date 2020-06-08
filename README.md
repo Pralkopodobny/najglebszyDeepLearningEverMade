@@ -11,9 +11,9 @@ The second objective is to create my own implementation of model which would cat
 ### k-NN
 The only problem with previous implementation of k-NN is that it uses **hamming distance metric** which is used to compare two **binary** pieces of information. Fashion-MNIST dataset contains grayscale images which, as you can see [here](https://github.com/zalandoresearch/fashion-mnist), are not discrete. In order to use algorithm witch this metric you have to preprocess images doing **binarization**. Obviously, the other solution is changing the metric. For example you can use **euclidean distance metric**.
 
-In my research I'll try those two approaches to see, which will produce better results. Of course first approach depends on threshold used within binarization algorithm (simply if pixel value is greather then threshold it will become 1 else 0) so I'll try to find which is best for Fashion-MNIST dataset.
+In my research I'll try those two approaches to check out, which will produce better results. Of course first approach depends on threshold used within binarization algorithm (simply if pixel value is greather then threshold it will become 1 else 0) so I'll try to find which is best for Fashion-MNIST dataset.
 
-You can see source kod of k-NN implementation in **K_NN.py** file and tests in **K_NN_Tests.py**.
+You can see source code of k-NN implementation in **K_NN.py** file and tests in **K_NN_Tests.py**.
 ### My model
 My model is sequential neural network model implemented using keras. 'Sequential' means, that neurons belong to layers - input layer, output layer and hidden layers between them. You could think of this model type as 'Hello World' of neural network machine learning. Each neuron is connected to all neurons from the previous layer and each connection has a weight. Basically, process of 'teaching' a model is a manipulation of those weights and biases used in their's activation functions.
 
@@ -25,9 +25,9 @@ While creating even simple sequential model you have to consider what function o
  - Tanh
 
 You can learn more about them by watching [Stanford university lectures](https://www.youtube.com/watch?v=wEoyxE0GP2M&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv&index=6).
-All of them have pros and cons, but as a rule of thumb you should never use sigmoid function and use ReLu instead. It's also possible to experiment with usage of other functions.
+All of them have advantages and disadvantages, but as a rule of thumb you should never use sigmoid function and use ReLu instead. You may also try using other previously mentioned functions.
 
-Those lectures also contain basic ideas how to initialize weights. The common solution is Xavier initialization (also known as Glorot initialization), however it woked well with sigmoid function not a ReLu function. You should use slightly modified version called he et al initialization.
+Those lectures also contain basic ideas how to initialize weights. The common solution is Xavier initialization (also known as Glorot initialization), however it woked well with sigmoid function not a ReLu function. You should use slightly modified version called 'he et al initialization'.
 #### about model
  [Navin Kumar Manaswi](https://books.google.pl/books/about/Deep_Learning_with_Applications_Using_Py.html?id=5HNUDwAAQBAJ&source=kp_cover&redir_esc=y) says that there are eight steps to the deep learning process in Keras:
 1. Load the data.
@@ -41,7 +41,7 @@ Those lectures also contain basic ideas how to initialize weights. The common so
 
 First of all you have to load the data. Next step is preprocessing of the data. It could be for example extracting futures using for example gabor filter or binarization of images. You could also increase size of training data by doing  image manipulation. After that you have to reshape data, so your model can use it.
 
-Fundamental method of defining models is trial and error. That's why, in this project, my model is based of [one model from zalandor research github](https://github.com/zalandoresearch/fashion-mnist/blob/master/benchmark/convnet.py). I tried changing initialization of layers, theirs parameters and I added batch normalization layer ([here's why it could be a good idea](https://youtu.be/wEoyxE0GP2M?t=2934)) . **However the goal of this project is not to make the best model possible, but to see results of training set manipulation**. In order to do so, I tried applying gabor filter, binarizing of  and translating images by vector. You can see results in the Result section.
+Fundamental method of defining models is trial and error. That's why, in this project, my model is based of [one of the models from zalandor research github](https://github.com/zalandoresearch/fashion-mnist/blob/master/benchmark/convnet.py). I tried changing initialization of layers, theirs parameters and I added batch normalization layer ([here's why it could be a good idea](https://youtu.be/wEoyxE0GP2M?t=2934)) . **However the goal of this project is not to make the best model possible, but to see results of training set manipulation**. In order to do so, I tried applying gabor filter, binarizing of  and translating images by vector. You can see results in the Result section.
 
 Before compiling, you have to chose optimizer for your model. I tried diffrent optimizers (trial and error method) and the best results (using only normalization and reshaping of data as preprocessing) produced adam optimizer. Adam optimizer is impementation of [SGD](https://en.wikipedia.org/wiki/Stochastic_gradient_descent).
 
@@ -61,7 +61,7 @@ Below you can see Fashon-MNIST images before and after applying gabor filter.
 ![](lab_4/data/images/gabored_fashon_mnist.png)
 
 #### Extending training set
-It is possible to increase size of training set by applying small changes to images that won't change their classification. It's a common technique that should increase accuracy of model (if done correctly). As I mentioned before, Fashon-MNIST contains only non rotated images, so applying rotation is a bad idea. However you can still apply translation by vector.
+It is possible to increase size of training set by applying small changes to images that won't change their classification. It's a common technique that should increase accuracy of model (if done correctly). As I mentioned before, Fashon-MNIST contains only non rotated images, so applying rotation is not a good idea. However you can still apply translation by vector.
 
 Below you can see Fashon-MNIST images before and after applying translation by random vectors containing values from -3 to 3.
 
@@ -118,7 +118,7 @@ I used best threshold from k-NN research and binarized ([sorce code](https://git
 | **my model with binarization of images** | 0.8840 |
 
 ### my model with extension of training dataset
-I translated ([sorce code](https://github.com/Pralkopodobny/najglebszyDeepLearningEverMade/blob/master/lab_4/preprocessing/translator.py)) images by a vector and added them to the training dataset. It didn't change accuracy too much, however during training process we could observe smaller diffrence between training accuracy and validation accuracy. It could mean that this method reduces [overfitting](https://en.wikipedia.org/wiki/Overfitting).
+I translated ([sorce code](https://github.com/Pralkopodobny/najglebszyDeepLearningEverMade/blob/master/lab_4/preprocessing/translator.py)) images by a vector and added them to the training dataset. It didn't change accuracy too much, however during training process we could observe smaller diffrences between training accuracy and validation accuracy. It could mean that this method reduces [overfitting](https://en.wikipedia.org/wiki/Overfitting).
 |  | accuracy |
 |--|--|
 | **my model without extension of training dataset** | 0.9253 |
